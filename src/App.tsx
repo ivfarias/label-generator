@@ -1,5 +1,5 @@
 'use client'
-
+import { useState, useRef, useEffect } from 'react';
 import JsBarcode from 'jsbarcode'
 import { QRCodeSVG } from 'qrcode.react'
 import './App.css';
