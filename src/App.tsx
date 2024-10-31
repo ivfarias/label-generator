@@ -1,6 +1,5 @@
 'use client'
 
-import React, { useState, useRef, useEffect } from 'react'
 import JsBarcode from 'jsbarcode'
 import { QRCodeSVG } from 'qrcode.react'
 import './App.css';
@@ -23,7 +22,6 @@ export default function BarcodeGenerator() {
   const [paperType, setPaperType] = useState(paperTypes[0])
   const [customPaper, setCustomPaper] = useState({ width: '', height: '', columns: '', rows: '' })
   const [showBulkDialog, setShowBulkDialog] = useState(false)
-  const barcodeRef = useRef<SVGSVGElement>(null)
 
   useEffect(() => {
     if (paperType.name === 'Custom') {
